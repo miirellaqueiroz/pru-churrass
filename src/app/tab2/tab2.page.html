@@ -1,0 +1,137 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="t2">
+    <ion-title class="t1">
+      MARCADOR DE TRUCO
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<body>
+
+
+<ion-card class="g1">
+  <ion-toolbar class="g2">
+    <ion-title class="ion-text-center">VALENDO: {{valendo}}</ion-title>
+  </ion-toolbar>
+</ion-card>
+
+  <ion-grid >
+    <ion-row>
+
+    <ion-col class="c1">
+      <ion-button class="z1" (click)="mudarpeso(1)">1</ion-button>
+    </ion-col>
+
+    <ion-col class="c1">
+      <ion-button class="z2" (click)=" mudarpeso(3)">3</ion-button>
+    </ion-col>
+
+    <ion-col class="c1">
+      <ion-button class="z3" (click)=" mudarpeso(6)">6</ion-button>
+    </ion-col>
+
+    <ion-col class="c1">
+      <ion-button class="z4" (click)=" mudarpeso(9)">9</ion-button>
+    </ion-col>
+
+    <ion-col class="c1">
+      <ion-button class="z5" (click)=" mudarpeso(12)">12</ion-button>
+    </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <ion-card class="g3">
+  <ion-grid>
+  <ion-row>
+  <ion-col>
+    <ion-title class="a1">TIME 1</ion-title>
+  </ion-col>
+
+  <ion-col>
+  <ion-title class="a2">TIME 2</ion-title>
+  </ion-col>
+
+  </ion-row>
+  <br>
+
+  <ion-row>
+  <ion-col class="c2">
+    <ion-button expand="full" class="b1"  (click) ="somarplacart1()">
+      +
+    </ion-button>
+  </ion-col>
+
+  <ion-col class="c2">
+    <ion-button expand="full" class="b2" (click) ="somarplacart2()">
+      +
+    </ion-button>
+  </ion-col>
+
+  </ion-row>
+
+
+  <ion-row >
+    <ion-col class="c2">
+      {{placart1}}
+    </ion-col>
+    <ion-col class="c2">
+      {{placart2}}
+        </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="c2">
+      <ion-button expand="full" class="b3" (click) ="diminuir_placart1()">
+        -
+      </ion-button>
+    </ion-col>
+
+    <ion-col class="c2">
+      <ion-button expand="full" class="b4" (click) ="diminuir_placart2()">
+        -
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+</ion-card>
+
+<ion-card class="m1">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+       <ion-title class="d1">PARTIDAS</ion-title>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+  <ion-col class="d2">
+    TIME 1
+  </ion-col>
+  <ion-col class="m2">
+    {{totalt1}}
+  </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col class="d3">
+        TIME 2
+      </ion-col>
+      <ion-col class="m3">
+        {{totalt2}}
+      </ion-col>
+        </ion-row>
+  </ion-grid>
+</ion-card>
+</body>
+</ion-content>
+
+<ion-card class="y1">
+  <ion-footer >
+    <br>
+  <ion-title  class =" ion-text-center" (click) ="limpar() " > LIMPAR </ion-title >
+</ion-footer >
+<br>
+</ion-card>
+
